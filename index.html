@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The website of a guy who like to make things.">
+  <meta name="author" content="ZootGhost">
+  <meta name="keywords" content="Artist, Illustrator, Art, Data, Fun">
+
+  <title>ZOOTGHOST</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico"> <!--added tab image -->
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/morphext.css"> 
+  <link rel="stylesheet" href="./assets/css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+    <div class="container-fluid wrapper">
+      <div class="row">       
+
+        <!-- rightmost image -->
+        <div class="col-md-4 hidden-sm hidden-xs">
+            <img class="img-responsive" src="./assets/img/rside.png">
+        </div> 
+
+        
+        <!-- central text div -->
+        <div id="content" class="col-md-4">
+        <!--circle gif
+        <img class="img-responsive" src="./assets/img/Circle.gif">-->
+      
+        <h2> ZOOTGHOST </h2>
+
+        <h3 class="hidden-sm hidden-xs">
+          
+         <span id="desktop-span" class="js-rotating">
+         You Can Read?!?, Well Done! , Click My Links Below, They'll Make You Happy :)
+          </span>
+       </h3>
+
+       <h3 class="hidden-md hidden-lg">
+        
+       </h3>
+       <h3 class="hidden-md hidden-lg">
+         <span id="mobile-span" class="js-rotating">
+           You Can Read?!?, Well Done! , Click My Links Below, They'll Make You Happy :)
+         </span>
+        </h3>
+          
+
+
+         <!-- <a href="http://charlesneilson.github.io//assets/cv.pdf">CLICK HERE TO DOWNLOAD</a> -->
+          <a title="Instagram" href="https://www.instagram.com/zootghost"><img src="./assets/img/mylink.png"/></a>
+          <a title="Email me"  href="mailto:zootghost@gmail.com?subject=Hello"><img src="./assets/img/myemail.png"/></a> 
+          <a title="Giphy"  href='https://giphy.com/Zootghost'><img src="./assets/img/mystore.png"/></a>  
+        </div>
+
+
+        <!-- leftmost image (only shown in md width or more -->
+        <div class="col-md-4 hidden-sm hidden-xs">
+           <img class="img-responsive" src="./assets/img/lside.png">
+        </div>
+
+        <!-- leftmost image (only shown in xs, sm width -->
+        <div class="hidden-lg hidden-md 
+                    col-sm-4 col-sm-offset-4
+                    col-xs-6 col-xs-offset-3">
+            <img class="img-responsive" src="./assets/img/lside.png">
+        </div>
+      </div>
+   </div>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/imagesloaded.min.js"></script>
+    <script src="./assets/js/morphext.min.js"></script>
+    <script type="text/javascript">
+        //when inmage is loaded inside wrapper fade in, lasting 2 secs
+        imagesLoaded( ".wrapper", function(){
+            $( ".wrapper").fadeIn(2000);  
+        })
+
+      // http://stackoverflow.com/questions/4211909/disable-dragging-an-image-from-an-html-page
+      $('img').on('dragstart', function(event) { event.preventDefault(); });
+
+
+      $(".js-rotating").Morphext({
+            animation: "bounceinRight", // Animation type (refer to Animate.css for a list of available animations) ANIMATED TAG LINE
+            separator: ",", // An array of words to rotate are created based on this separator. Change it if you wish to separate the words differently (e.g. So Simple | Very Doge | Much Wow | Such Cool)
+            speed: 2500 // The delay between each word in milliseconds
+        });
+    </script>
+</body>
+</html>

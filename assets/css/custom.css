@@ -1,0 +1,52 @@
+/*{ border:1px black solid; } /*Brings up the grids*/  
+
+html, 
+body{
+    color:night;
+    font-family: 'Arial', cursive;
+    font-size: 1.9em;
+    background-color:white;
+}
+
+@media (max-width: 360px) { /*only styles for 360px or less*/
+    h1,h2,h3{
+        margin: 0;
+    }
+
+    #content{
+        margin-top: 0 !important; 
+}
+    .wrapper{
+        margin-top: 3% !important;
+    }
+}
+
+
+
+#content {
+    text-align: center;
+    margin-top: 6%;
+}
+
+#content h2{
+   font-size: 1.2em;	
+}
+
+#content h3 {
+	font-size: 0.6em;
+}
+
+
+#content .desktop-span { /*keeping the width of the new words box*/
+	position:relative;
+    width: 300px;
+    right: 10px;
+}
+
+#content .mobile-span { /*keeping the width of the new words box*/
+}
+
+.wrapper{
+    margin-top: 10%;
+    display:none;
+}
